@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="description"
+    content="Portfolio of John Doe, a Full Stack Developer specializing in modern web applications with React, Node.js, and cloud technologies." />
+  <meta name="keywords" content="full stack developer, web developer, React, Node.js, portfolio" />
+  <meta property="og:title" content="John Doe — Full Stack Developer" />
+  <meta property="og:description" content="Building elegant digital experiences with modern web technologies." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span><span id="nav-logo-initials">JD</span><span class="logo-bracket">
+          /&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting reveal-up">Hello, I'm</p>
+      <h1 class="hero-name reveal-up" style="animation-delay: 0.1s" id="hero-name">Pratik Ingole</h1>
+      <p class="hero-role reveal-up" style="animation-delay: 0.2s">
+        <span class="typed-text" id="typed-text"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-description reveal-up" style="animation-delay: 0.3s">
+        I build modern, scalable web applications with a focus on<br />
+        clean code and exceptional user experiences.
+      </p>
+      <div class="hero-cta reveal-up" style="animation-delay: 0.4s">
+        <a href="#projects" class="btn btn-primary" id="hero-cta-projects">View My Work</a>
+        <a href="#contact" class="btn btn-outline" id="hero-cta-contact">Get In Touch</a>
+      </div>
+      <div class="hero-social reveal-up" style="animation-delay: 0.5s" id="hero-social"></div>
+    </div>
+    <a href="#about" class="scroll-indicator" id="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title reveal-up">About Me</h2>
+      <p class="section-subtitle reveal-up">Get to know me better</p>
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="about-image-wrapper">
+            <img src="/profile.png" alt="Pratik Ingole" class="about-image-photo" id="about-image" />
+            <div class="about-image-decoration"></div>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-bio reveal-right" id="about-bio"></p>
+          <div class="about-stats reveal-right" id="about-stats"></div>
+          <div style="display: flex; justify-content: center; width: 100%;">
+            <a href="#" target="_blank" download class="btn btn-primary reveal-right" id="download-resume"
+              style="animation-delay: 0.3s">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal-up">Skills & Tech Stack</h2>
+      <p class="section-subtitle reveal-up">Technologies I work with</p>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal-up">Featured Projects</h2>
+      <p class="section-subtitle reveal-up">Some things I've built</p>
+      <div class="project-filters reveal-up" id="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal-up">Get In Touch</h2>
+      <p class="section-subtitle reveal-up">Have a project in mind? Let's talk.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left" id="contact-info">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p id="contact-email"></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <h3>Location</h3>
+              <p id="contact-location"></p>
+            </div>
+          </div>
+          <div class="contact-socials" id="contact-socials"></div>
+        </div>
+        <form class="contact-form reveal-right" id="contact-form">
+          <div class="form-group">
+            <label for="form-name">Name</label>
+            <input type="text" id="form-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input type="email" id="form-email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+            <span>Send Message</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span><span id="footer-logo-initials">JD</span><span class="logo-bracket">
+            /&gt;</span>
+        </a>
+        <p class="footer-text">Designed & built with passion.</p>
+        <div class="footer-socials" id="footer-socials"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> <span id="footer-name">John Doe</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast">
+    <p id="toast-message"></p>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
