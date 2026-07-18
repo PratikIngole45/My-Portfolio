@@ -99,6 +99,39 @@ export const skills = [
 ];
 
 export const projects = [
+
+  {
+    title: "KrushiBazaar",
+    description:
+      "A full-stack agricultural marketplace platform connecting farmers and buyers directly. Features real-time offers, secure authentication, role-based dashboards, and a responsive interface.",
+    tags: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+    ],
+    category: "fullstack",
+    github: "https://github.com/PratikIngole45/KrushiBazaar",
+    live: "https://krushibazaar-visit.vercel.app/",
+    featured: true,
+  },
+
+  {
+    title: "Personal Portfolio",
+    description:
+      "A modern and responsive portfolio website showcasing my projects, technical skills, achievements, and educational background with a clean and professional design.",
+    tags: [
+      "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Responsive Design",
+    ],
+    category: "frontend",
+    github: "https://github.com/PratikIngole45/My-Portfolio",
+    live: "https://pratikingole-portfolio.vercel.app/",
+    featured: true,
+  },
   {
     title: "WanderNest",
     description:
@@ -113,8 +146,8 @@ export const projects = [
       "Mapbox API",
     ],
     category: "fullstack",
-    github: null,
-    live: null,
+    github: "https://github.com/PratikIngole45/WanderNest",
+    live: "https://wandernest-htyr.onrender.com/",
     featured: true,
   },
 
@@ -132,22 +165,6 @@ export const projects = [
     category: "fullstack",
     github: null,
     live: null,
-    featured: true,
-  },
-
-  {
-    title: "Personal Portfolio",
-    description:
-      "A modern and responsive portfolio website showcasing my projects, technical skills, achievements, and educational background with a clean and professional design.",
-    tags: [
-      "React.js",
-      "JavaScript",
-      "Tailwind CSS",
-      "Responsive Design",
-    ],
-    category: "frontend",
-    github: "https://github.com/PratikIngole45/My-Portfolio",
-    live: "https://pratikingole-portfolio.vercel.app/",
     featured: true,
   },
 ];
