@@ -146,8 +146,8 @@ export const projects = [
       "Responsive Design",
     ],
     category: "frontend",
-    github: null,
-    live: null,
+    github: "https://github.com/PratikIngole45/My-Portfolio",
+    live: "https://pratikingole-portfolio.vercel.app/",
     featured: true,
   },
 ];
